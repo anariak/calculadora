@@ -17,10 +17,15 @@ code {
   margin:2px;
   padding: 2px;
 }
+.operators{
+  margin: 2px;
+  padding: 2px;
+}
 .pantallaNegra{
   background-color: black;
   color: azure;
   max-width: 300px;
-  height: 60px;
+  height: 55px;
   font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
