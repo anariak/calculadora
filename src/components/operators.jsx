@@ -1,20 +1,20 @@
 import React from 'react';
 
 function Operators(props){
-    const {operator, setOperator} = props
+    const {Operator, setOperator} = props
+    toString(Operator)
     return(
-        <button 
+        <button
         onClick={setOperator}
-        value={operator}
+        value={Operator}
         style={{
             width:"60px",
             height:"60px",
             borderRadius:"8px",
-            backgroundColor:"white",
             borderStyle:"solid",
             margin:"2px"
-        }}>
-            {operator}
+        }} className="op">
+            {Operator}
         </button>
     )
 }

@@ -5,7 +5,7 @@ const Screen =(props) =>{
     const { initialValue, calcValues } = props
 
     return(
-        <div className="pantallaNegra">
+        <div className="screen">
             <h1>{calcValues > 1? calcValues: initialValue}</h1>
         </div>
     )

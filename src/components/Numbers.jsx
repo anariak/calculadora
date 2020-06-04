@@ -4,21 +4,21 @@ import PropTypes from 'prop-types'
 
 function Numbers(props){
     const { Number , setData} = props
-    //the number represents the value of button
+
     return(
         <React.Fragment>
-            <button value={Number} 
+            <button 
+            value={Number} 
             onClick={setData}
                 style={{
                     width:"60px",
                     height:"60px",
                     borderRadius:"8px",
-                    backgroundColor:"white",
                     borderStyle:"solid",
-                    margin:"2px"
+                    margin:"2px",
                 }}
                 key={Number}
-            >
+            className="button">
                 {Number}
             </button>
         </React.Fragment>
