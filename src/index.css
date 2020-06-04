@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.botonera{
+  max-width: 210px;
+  margin:2px;
+  padding: 2px;
+}
+.pantallaNegra{
+  background-color: black;
+  color: azure;
+  max-width: 300px;
+  height: 60px;
+  font-size: 20px;
+}

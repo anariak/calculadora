@@ -3,18 +3,30 @@ import PropTypes from 'prop-types'
 
 
 function Numbers(props){
-    const { values, numero } = props
+    const { Number , setData} = props
+    //the number represents the value of button
     return(
         <React.Fragment>
-            <button value={values}>
-                {numero}
+            <button value={Number} 
+            onClick={setData}
+                style={{
+                    width:"60px",
+                    height:"60px",
+                    borderRadius:"8px",
+                    backgroundColor:"white",
+                    borderStyle:"solid",
+                    margin:"2px"
+                }}
+                key={Number}
+            >
+                {Number}
             </button>
         </React.Fragment>
     )
 }
 
 Numbers.propTypes={
-    values: PropTypes.number.isRequired
+    Number: PropTypes.any.isRequired
 }
 
 export default Numbers

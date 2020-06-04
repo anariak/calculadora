@@ -1,12 +1,18 @@
-import React,{ useState } from 'react';
-
+import React from 'react';
+import PropTypes from 'prop-types'
 
 const Screen =(props) =>{
-    const { initialValue } = props
-    const[value, setValues] = useState(initialValue)
+    const { initialValue, calcValues } = props
+
     return(
-        <h1>ACA IRAN LO VALORES</h1>
+        <div className="pantallaNegra">
+            <h1>{calcValues > 1? calcValues: initialValue}</h1>
+        </div>
     )
+}
+Screen.propTypes ={
+    initialValue: PropTypes.number.isRequired,
+    calcValues: PropTypes.any.isRequired
 }
 
 export default Screen
