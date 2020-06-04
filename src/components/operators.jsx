@@ -1,22 +1,21 @@
-import React from 'react';
+import React,{useCallback} from 'react';
 
-function Operators(props){
-    const {Operator, setOperator} = props
-    toString(Operator)
-    return(
-        <button
-        onClick={setOperator}
-        value={Operator}
-        style={{
-            width:"60px",
-            height:"60px",
-            borderRadius:"8px",
-            borderStyle:"solid",
-            margin:"2px"
-        }} className="op">
-            {Operator}
-        </button>
+
+
+const Operators = ({setOperator, operator}) => {
+    const onClick = useCallback(()=>{
+      setOperator(operator)
+    },[operator])
+    return (
+      <button 
+      style={{
+        width:"60px",
+        height:"60px",
+        borderRadius:"8px",
+        borderStyle:"solid",
+        margin:"2px"
+    }} 
+      onClick={onClick}>{operator}</button>
     )
-}
-
+  }
 export default Operators
